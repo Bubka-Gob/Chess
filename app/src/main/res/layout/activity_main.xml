@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_reset">
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewB8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewC8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewD8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewE8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewF8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewG8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewH8"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewB7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewC7"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewD7"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewE7"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewF7"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewG7"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewH7"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewB6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewC6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewD6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewE6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewF6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewG6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewH6"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewB5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewC5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewD5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewE5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewF5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewG5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewH5"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewB4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewC4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewD4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewE4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewF4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewG4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewH4"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewB3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewC3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewD3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewE3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewF3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewG3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewH3"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewB2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewC2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewD2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewE2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewF2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewG2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewH2"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="80">
+
+            <ImageView
+                android:id="@+id/imageViewA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewB1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewC1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewD1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewE1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewF1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+            <ImageView
+                android:id="@+id/imageViewG1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/black" />
+
+            <ImageView
+                android:id="@+id/imageViewH1"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onClickBoard"
+                android:src="@drawable/white" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
