@@ -45,15 +45,17 @@ public class Saver {
         db = helper.getWritableDatabase();
         db.delete(helper.TABLE_NAME, null, null);
         db.delete(helper.TABLE_TURN, null, null);
+        db.delete("sqlite_sequence", null, null);
     }
 
     public List<Figure> loadFigures(char color) {
         db = helper.getReadableDatabase();
         List<Figure> toReturn = new ArrayList<>();
+        String[] args = {Character.toString(color)};
         Cursor cursor = db.query("save",
                 null,
-                null,
-                null,
+                SQLiteBase.FIELD_COLOR + " = ?",
+                args,
                 null,
                 null,
                 null
@@ -61,38 +63,32 @@ public class Saver {
         if(cursor.getCount() != 0){
             cursor.moveToFirst();
             do {
-                if(cursor.getString(4).equals("Rook") &&
-                        cursor.getString(3).equals(Character.toString(color)))
+                if(cursor.getString(4).equals("Rook"))
                     toReturn.add(new Rook(cursor.getInt(1),
                             cursor.getInt(2),
                             cursor.getString(3).charAt(0)));
 
-                else if(cursor.getString(4).equals("Knight") &&
-                            cursor.getString(3).equals(Character.toString(color)))
+                else if(cursor.getString(4).equals("Knight"))
                     toReturn.add(new Knight(cursor.getInt(1),
                             cursor.getInt(2),
                             cursor.getString(3).charAt(0)));
 
-                else if(cursor.getString(4).equals("Bishop") &&
-                            cursor.getString(3).equals(Character.toString(color)))
+                else if(cursor.getString(4).equals("Bishop"))
                     toReturn.add(new Bishop(cursor.getInt(1),
                             cursor.getInt(2),
                             cursor.getString(3).charAt(0)));
 
-                else if(cursor.getString(4).equals("Queen") &&
-                            cursor.getString(3).equals(Character.toString(color)))
+                else if(cursor.getString(4).equals("Queen"))
                     toReturn.add(new Queen(cursor.getInt(1),
                             cursor.getInt(2),
                             cursor.getString(3).charAt(0)));
 
-                else if(cursor.getString(4).equals("King") &&
-                            cursor.getString(3).equals(Character.toString(color)))
+                else if(cursor.getString(4).equals("King"))
                     toReturn.add(new King(cursor.getInt(1),
                             cursor.getInt(2),
                             cursor.getString(3).charAt(0)));
 
-                else if(cursor.getString(4).equals("Pawn") &&
-                            cursor.getString(3).equals(Character.toString(color)))
+                else if(cursor.getString(4).equals("Pawn"))
                     toReturn.add(new Pawn(cursor.getInt(1),
                             cursor.getInt(2),
                             cursor.getString(3).charAt(0)));
@@ -106,7 +102,7 @@ public class Saver {
 
     public boolean LoadTurn() {
         db = helper.getReadableDatabase();
-        Cursor cursor = db.query("save",
+        Cursor cursor = db.query("turn",
                 null,
                 null,
                 null,

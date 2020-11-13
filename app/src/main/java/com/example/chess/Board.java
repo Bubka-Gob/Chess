@@ -21,6 +21,7 @@ public class Board {
         generateStartBoard();
     }
 
+    // main game logic here
     public void imagePressed(int x, int y) {
         if(pickedFigure == null) {
             if (getFigure(x, y) != null) {

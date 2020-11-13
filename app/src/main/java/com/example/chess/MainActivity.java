@@ -25,19 +25,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         board.save();
-        Toast.makeText(getApplicationContext(),
-                "Saving",
-                Toast.LENGTH_SHORT).show();
-
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        if(board.load())
-            Toast.makeText(getApplicationContext(),
-                    "Loading",
-                    Toast.LENGTH_SHORT).show();
+        board.load();
     }
 
     public void boardInit(){
